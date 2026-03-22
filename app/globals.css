@@ -1,7 +1,5 @@
 @import "tailwindcss";
-/*
-  ---break---
-*/
+
 @custom-variant dark (&:is(.dark *));
 
 @import "tw-animate-css";
@@ -57,14 +55,6 @@
   --radius-sm: calc(var(--radius) - 4px);
 }
 
-/*
-  The default border color has changed to `currentColor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
-
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
 @layer base {
   *,
   ::after,
@@ -72,12 +62,6 @@
   ::backdrop,
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@layer utilities {
-  body {
-    font-family: "Manrope", Arial, Helvetica, sans-serif;
   }
 }
 
@@ -154,19 +138,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/*
-  ---break---
-*/
-
 :root {
   --background: hsl(0 0% 100%);
   --foreground: hsl(240 10% 3.9%);
@@ -195,10 +166,6 @@
   --radius: 0.6rem;
 }
 
-/*
-  ---break---
-*/
-
 .dark {
   --background: hsl(240 10% 3.9%);
   --foreground: hsl(0 0% 98%);
@@ -225,10 +192,6 @@
   --chart-4: hsl(280 65% 60%);
   --chart-5: hsl(340 75% 55%);
 }
-
-/*
-  ---break---
-*/
 
 @theme inline {
   --color-background: var(--background);
@@ -259,11 +222,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-display: var(--font-space-grotesk);
 }
-
-/*
-  ---break---
-*/
 
 @layer base {
   * {
@@ -272,4 +232,19 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Hero dot-grid pattern */
+.hero-pattern {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 0
+  );
+  background-size: 40px 40px;
+}
+
+/* Smooth in-page scrolling */
+html {
+  scroll-behavior: smooth;
 }
