@@ -5,7 +5,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Delta Applied AI Research Lab',
+  title: 'VLA AI Lab – Vision, Language and Applied AI',
   description:
     'Applied AI research for real-world impact in Ethiopia & Africa. Language technology, computer vision, governance, and climate AI.',
 };

@@ -143,7 +143,7 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-gray-500">
-              &copy; {new Date().getFullYear()} Delta Applied AI Research Lab. All rights reserved.
+              &copy; {new Date().getFullYear()} VLA AI Lab. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link

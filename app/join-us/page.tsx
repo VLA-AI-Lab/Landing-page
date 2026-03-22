@@ -5,9 +5,9 @@ import { ArrowRight, MapPin, GraduationCap, Users, Globe } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Contact & Join Us – Delta Applied AI',
+  title: 'Contact & Join Us – VLA AI Lab',
   description:
-    'Connect with Delta Applied AI Research Lab — explore open positions, send us a message, or subscribe to our research digest.',
+    'Connect with VLA AI Lab — explore open positions, send us a message, or subscribe to our research digest.',
 };
 
 /* ── images ── */
@@ -83,7 +83,7 @@ export default function JoinUsPage() {
               </div>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 We are always looking for exceptional talent to join our
-                multidisciplinary team. At Delta Applied AI, you will work on
+                multidisciplinary team. At VLA AI Lab, you will work on
                 cutting-edge problems in machine learning, computer vision, and
                 neural networks.
               </p>
@@ -139,7 +139,7 @@ export default function JoinUsPage() {
                 <div className="p-6">
                   <address className="not-italic text-gray-600 space-y-1">
                     <p className="font-semibold text-gray-900">
-                      Delta Applied AI Research Lab
+                      VLA AI Lab
                     </p>
                     <p>Engineering Building II, Suite 400</p>
                     <p>123 Innovation Drive</p>
@@ -174,10 +174,10 @@ export default function JoinUsPage() {
                   Or contact us directly at
                 </p>
                 <a
-                  href="mailto:info@deltaailab.edu"
+                  href="mailto:info@vlaailab.edu"
                   className="text-lg font-bold text-[#0F3E6D] hover:underline"
                 >
-                  info@deltaailab.edu
+                  info@vlaailab.edu
                 </a>
               </div>
             </div>

@@ -130,9 +130,9 @@ export default function HomePage() {
             </span>
 
             <h1 className="text-4xl lg:text-6xl font-display font-bold text-white mb-6 leading-[1.1] tracking-tight">
-              Delta Applied AI{' '}
+              VLA AI Lab{' '}
               <br className="hidden sm:block" />
-              Research Lab
+              Vision, Language &amp; Applied AI
             </h1>
 
             <p className="text-xl lg:text-2xl text-blue-100 font-light mb-10 max-w-2xl leading-relaxed">
@@ -171,7 +171,7 @@ export default function HomePage() {
               </h2>
               <div className="text-slate-600 leading-relaxed text-lg space-y-4">
                 <p>
-                  Delta Applied AI Research Lab is dedicated to advancing the
+                  VLA AI Lab is dedicated to advancing the
                   state of Artificial Intelligence while ensuring equitable
                   access to its benefits. Situated at the intersection of
                   academic rigor and industry necessity, we focus on solving

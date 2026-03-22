@@ -9,9 +9,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About & Mission – Delta Applied AI',
+  title: 'About & Mission – VLA AI Lab',
   description:
-    'Our vision, mission, core values, and methodology at Delta Applied AI Research Lab.',
+    'Our vision, mission, core values, and methodology at VLA AI Lab.',
 };
 
 /* ── images from prototype ── */
@@ -78,7 +78,7 @@ const milestones = [
     year: '2018',
     title: 'Foundation',
     description:
-      'Delta Applied AI was established by Dr. Elena Rostova and a team of ex-CERN physicists with a seed grant from the National Science Foundation.',
+      'VLA AI Lab was established by Dr. Elena Rostova and a team of ex-CERN physicists with a seed grant from the National Science Foundation.',
     isCurrent: true,
   },
   {
@@ -141,7 +141,7 @@ export default function AboutPage() {
               </h2>
               <div className="text-gray-600 text-lg leading-relaxed space-y-4">
                 <p>
-                  At Delta Applied AI Research Lab, we do not innovate for
+                  At VLA AI Lab, we do not innovate for
                   innovation&rsquo;s sake. Our mission is to translate
                   cutting-edge neural architectures into robust, scalable systems
                   that address critical needs in healthcare, logistics, and
@@ -219,7 +219,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold mb-4">
-              The Delta Methodology
+              The VLA Methodology
             </h2>
             <p className="text-blue-100 max-w-2xl mx-auto">
               From hypothesis to deployment, our iterative cycle ensures

@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Partners & Collaboration – Delta Applied AI',
+  title: 'Partners & Collaboration – VLA AI Lab',
   description:
     'Strategic alliances with industry leaders, academic institutions, and government bodies powering real-world AI impact.',
 };
@@ -56,7 +56,7 @@ const caseStudies = [
     tagIcon: Heart,
     title: 'Predictive Diagnostics with Global Health Partners',
     description:
-      'In partnership with major research hospitals, Delta Lab deployed novel deep learning architectures to analyze medical imaging data. The collaboration resulted in a 14% improvement in early detection rates for rare pathologies, directly impacting patient outcomes across three continents.',
+      'In partnership with major research hospitals, VLA AI Lab deployed novel deep learning architectures to analyze medical imaging data. The collaboration resulted in a 14% improvement in early detection rates for rare pathologies, directly impacting patient outcomes across three continents.',
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCOcEJwJUJvaT37whHjVRQnIaXgg50z0A29bj7GGRDmbPJzahM3bLZEubEp6y-39UefY-FXJacYCZ13ewsrmka8z8OweEQDHA57LXHIPsd1kVfAYSn3OZCBs1NpDdox2QTpbILkUToDYtZrtMO7qgG-jHf9zs7Ushmd65puYQnIgZEG654NfuJjYHIZOWXIhrDNdEGlVkE1Iw2BQ4qt0dqvANGrjolw1LQmbW73h1YICziLY34W2nOjZQvYeaR57HP6EAtUDkZa',
     alt: 'Medical Imaging AI',

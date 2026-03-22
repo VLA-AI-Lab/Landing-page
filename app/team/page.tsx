@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { ArrowRight, Linkedin, GraduationCap, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'People & Team – Delta Applied AI',
+  title: 'People & Team – VLA AI Lab',
   description:
-    'Meet the minds behind Delta Applied AI Research Lab – researchers, engineers, and academics advancing AI responsibly.',
+    'Meet the minds behind VLA AI Lab – researchers, engineers, and academics advancing AI responsibly.',
 };
 
 /* ── images ── */
@@ -19,7 +19,7 @@ const director = {
   name: 'Dr. Alistair Vance',
   role: 'Lab Director & Principal Investigator',
   image: IMG_DIRECTOR,
-  bio: "Dr. Vance leads the Delta Applied AI Lab with over 15 years of experience in neural architecture search and reinforcement learning. Formerly a Senior Research Scientist at Google DeepMind, he now focuses on bridging the gap between theoretical AI advancements and practical, scalable applications in healthcare and environmental science.",
+  bio: "Dr. Vance leads VLA AI Lab with over 15 years of experience in neural architecture search and reinforcement learning. Formerly a Senior Research Scientist at Google DeepMind, he now focuses on bridging the gap between theoretical AI advancements and practical, scalable applications in healthcare and environmental science.",
   interests: ['Reinforcement Learning', 'Neural Architecture Search', 'AI Safety'],
 };
 
@@ -114,7 +114,7 @@ export default function TeamPage() {
             Our Team
           </h1>
           <p className="max-w-2xl mx-auto text-lg text-gray-600 leading-relaxed">
-            Meet the minds behind Delta Applied AI. We are a diverse group of
+            Meet the minds behind VLA AI Lab. We are a diverse group of
             researchers, engineers, and academics dedicated to advancing the
             frontiers of artificial intelligence responsibly.
           </p>
