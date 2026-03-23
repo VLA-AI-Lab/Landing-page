@@ -48,21 +48,20 @@ export function Footer() {
           {/* Brand column */}
           <div className="space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="size-9 rounded-md bg-white flex items-center justify-center shadow-sm">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="size-5 text-[#0F3E6D]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
+              <svg viewBox="0 0 110 110" className="size-9 flex-shrink-0" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="55,5 100,27.5 55,50 10,27.5" fill="#1D9E75"/>
+                <polygon points="10,27.5 55,50 55,100 10,77.5" fill="#EF9F27"/>
+                <polygon points="55,50 100,27.5 100,77.5 55,100" fill="#7F77DD"/>
+                <line x1="55" y1="5" x2="55" y2="50" stroke="rgba(0,0,0,0.1)" strokeWidth="0.6"/>
+                <line x1="55" y1="50" x2="10" y2="27.5" stroke="rgba(0,0,0,0.1)" strokeWidth="0.6"/>
+                <line x1="55" y1="50" x2="100" y2="27.5" stroke="rgba(0,0,0,0.1)" strokeWidth="0.6"/>
+                <line x1="55" y1="50" x2="55" y2="100" stroke="rgba(0,0,0,0.1)" strokeWidth="0.6"/>
+              </svg>
               <span className="text-lg font-bold text-white tracking-wide">
-                VLA AI LAB
+                <span className="text-[#1D9E75]">V</span>
+                <span className="text-[#EF9F27]">L</span>
+                <span className="text-[#7F77DD]">A</span>
+                <span className="font-light text-white/50 ml-1">Lab</span>
               </span>
             </div>
             <div className="space-y-1 text-sm text-gray-400">
