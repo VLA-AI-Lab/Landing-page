@@ -62,7 +62,7 @@ export function Footer() {
                 </svg>
               </div>
               <span className="text-lg font-bold text-white tracking-wide">
-                DELTA AI
+                VLA AI LAB
               </span>
             </div>
             <div className="space-y-1 text-sm text-gray-400">

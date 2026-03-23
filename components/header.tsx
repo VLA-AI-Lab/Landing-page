@@ -39,7 +39,7 @@ function Logo() {
       {/* Brand text */}
       <div className="flex flex-col leading-tight">
         <span className="text-sm font-bold tracking-wide text-[#0F3E6D]">
-          DELTA APPLIED AI
+          VLA AI LAB
         </span>
         <span className="text-[10px] font-medium tracking-[0.2em] text-gray-500 uppercase">
           Research Lab
