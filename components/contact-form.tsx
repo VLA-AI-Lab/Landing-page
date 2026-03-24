@@ -3,15 +3,43 @@
 import { useState, type FormEvent } from 'react';
 
 export function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: wire up to your API / email service
-    setSubmitted(true);
+    setStatus('sending');
+    setErrorMsg('');
+
+    const form = e.currentTarget;
+    const data = {
+      firstName: (form.elements.namedItem('first-name') as HTMLInputElement).value,
+      lastName: (form.elements.namedItem('last-name') as HTMLInputElement).value,
+      email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      subject: (form.elements.namedItem('subject') as HTMLSelectElement).value,
+      message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) {
+        const body = await res.json();
+        throw new Error(body.error || 'Something went wrong.');
+      }
+
+      setStatus('success');
+    } catch (err) {
+      setErrorMsg(err instanceof Error ? err.message : 'Failed to send message.');
+      setStatus('error');
+    }
   }
 
-  if (submitted) {
+  if (status === 'success') {
     return (
       <div className="text-center py-12">
         <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-green-50 flex items-center justify-center">
@@ -144,11 +172,18 @@ export function ContactForm() {
         </div>
       </div>
 
+      {status === 'error' && (
+        <div className="rounded-md bg-red-50 border border-red-200 p-4">
+          <p className="text-sm text-red-700">{errorMsg}</p>
+        </div>
+      )}
+
       <button
         type="submit"
-        className="w-full py-3 px-4 rounded-md shadow-sm text-sm font-bold text-white bg-[#0F3E6D] hover:bg-[#0b3059] transition-colors uppercase tracking-wide"
+        disabled={status === 'sending'}
+        className="w-full py-3 px-4 rounded-md shadow-sm text-sm font-bold text-white bg-[#0F3E6D] hover:bg-[#0b3059] transition-colors uppercase tracking-wide disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
     </form>
   );

@@ -180,10 +180,10 @@ export default function JoinUsPage() {
                   Or contact us directly at
                 </p>
                 <a
-                  href="mailto:info@vlaailab.edu"
+                  href="mailto:contact@vla.et"
                   className="text-lg font-bold text-[#0F3E6D] hover:underline"
                 >
-                  info@vlaailab.edu
+                  contact@vla.et
                 </a>
               </div>
             </div>
