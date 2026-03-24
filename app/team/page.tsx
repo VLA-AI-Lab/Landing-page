@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowRight, Linkedin, GraduationCap, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'People & Team – VLA AI Lab',
+  title: 'Our Team',
   description:
     'Meet the minds behind VLA AI Lab – researchers, engineers, and academics advancing AI responsibly.',
 };

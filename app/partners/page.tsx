@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Partners & Collaboration – VLA AI Lab',
+  title: 'Partners & Collaboration',
   description:
     'Strategic alliances with industry leaders, academic institutions, and government bodies powering real-world AI impact.',
 };

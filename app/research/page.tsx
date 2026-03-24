@@ -17,7 +17,7 @@ import {
 import { EmptyState } from '@/components/empty-state';
 
 export const metadata: Metadata = {
-  title: 'Research – VLA AI Lab',
+  title: 'Research',
   description:
     'Explore our research domains, featured projects, and publications advancing AI for real-world impact in Ethiopia & Africa.',
 };

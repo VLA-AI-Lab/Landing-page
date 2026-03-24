@@ -5,7 +5,10 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'VLA AI Lab – Vision, Language and Applied AI',
+  title: {
+    default: 'VLA AI Lab | Vision, Language & Applied AI',
+    template: '%s | VLA AI Lab',
+  },
   description:
     'Applied AI research for real-world impact in Ethiopia & Africa. Language technology, computer vision, governance, and climate AI.',
 };

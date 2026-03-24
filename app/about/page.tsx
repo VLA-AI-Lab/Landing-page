@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About & Mission – VLA AI Lab',
+  title: 'About & Mission',
   description:
     'Our vision, mission, core values, and methodology at VLA AI Lab.',
 };

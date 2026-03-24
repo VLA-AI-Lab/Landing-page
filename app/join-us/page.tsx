@@ -5,7 +5,7 @@ import { ArrowRight, MapPin, GraduationCap, Users, Globe } from 'lucide-react';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Contact & Join Us – VLA AI Lab',
+  title: 'Join Us',
   description:
     'Connect with VLA AI Lab — explore open positions, send us a message, or subscribe to our research digest.',
 };
