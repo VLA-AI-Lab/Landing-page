@@ -4,8 +4,8 @@ export default function NotFound() {
   return (
     <div className="flex items-center justify-center min-h-[80dvh]">
       <div className="max-w-md space-y-6 p-4 text-center">
-        <div className="inline-flex items-center justify-center size-16 rounded-full bg-[#0F3E6D]/5">
-          <span className="text-2xl font-bold text-[#0F3E6D]">404</span>
+        <div className="inline-flex items-center justify-center size-16 rounded-full bg-[#7F77DD]/5">
+          <span className="text-2xl font-bold text-[#7F77DD]">404</span>
         </div>
         <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
           Page Not Found

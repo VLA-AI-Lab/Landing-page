@@ -108,7 +108,7 @@ export default function TeamPage() {
   return (
     <>
       {/* ────────────────────── HERO ────────────────────── */}
-      <section className="relative pt-20 pb-16 bg-gradient-to-b from-blue-50 to-slate-50">
+      <section className="relative pt-20 pb-16 bg-gradient-to-b from-[#7F77DD]/5 to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Team
@@ -127,7 +127,7 @@ export default function TeamPage() {
           {/* section divider */}
           <div className="flex items-center gap-4 mb-12">
             <div className="h-px flex-1 bg-gray-200" />
-            <h2 className="text-2xl font-bold text-center text-[#0F3E6D] uppercase tracking-wide">
+            <h2 className="text-2xl font-bold text-center text-[#7F77DD] uppercase tracking-wide">
               Core Leadership
             </h2>
             <div className="h-px flex-1 bg-gray-200" />
@@ -148,7 +148,7 @@ export default function TeamPage() {
                 <h3 className="text-white text-2xl font-bold">
                   {director.name}
                 </h3>
-                <p className="text-blue-200 font-medium">{director.role.split(' & ')[0]}</p>
+                <p className="text-gray-300 font-medium">{director.role.split(' & ')[0]}</p>
               </div>
             </div>
             <div className="md:w-2/3 p-8 md:p-12 flex flex-col justify-center">
@@ -156,7 +156,7 @@ export default function TeamPage() {
                 <h3 className="text-3xl font-display font-bold text-gray-900">
                   {director.name}
                 </h3>
-                <p className="text-[#0F3E6D] font-medium text-lg mt-1">
+                <p className="text-[#7F77DD] font-medium text-lg mt-1">
                   {director.role}
                 </p>
               </div>
@@ -171,7 +171,7 @@ export default function TeamPage() {
                   {director.interests.map((interest) => (
                     <span
                       key={interest}
-                      className="px-3 py-1 bg-blue-50 text-[#0F3E6D] text-sm rounded-full font-medium"
+                      className="px-3 py-1 bg-[#7F77DD]/10 text-[#7F77DD] text-sm rounded-full font-medium"
                     >
                       {interest}
                     </span>
@@ -181,14 +181,14 @@ export default function TeamPage() {
               <div className="flex gap-4 mt-auto">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                  className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="size-6" />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                  className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                   aria-label="Google Scholar"
                 >
                   <GraduationCap className="size-6" />
@@ -219,7 +219,7 @@ export default function TeamPage() {
                     <h3 className="text-xl font-bold text-gray-900">
                       {person.name}
                     </h3>
-                    <p className="text-[#0F3E6D] text-sm font-medium">
+                    <p className="text-[#7F77DD] text-sm font-medium">
                       {person.role}
                     </p>
                   </div>
@@ -240,14 +240,14 @@ export default function TeamPage() {
                     <div className="flex gap-3">
                       <a
                         href="#"
-                        className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                        className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                         aria-label="LinkedIn"
                       >
                         <Linkedin className="size-5" />
                       </a>
                       <a
                         href="#"
-                        className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                        className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                         aria-label="Google Scholar"
                       >
                         <GraduationCap className="size-5" />
@@ -265,7 +265,7 @@ export default function TeamPage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
-            <h2 className="text-2xl font-bold text-[#0F3E6D] uppercase tracking-wide">
+            <h2 className="text-2xl font-bold text-[#7F77DD] uppercase tracking-wide">
               Academic Advisors
             </h2>
             <div className="h-px flex-1 bg-gray-200" />
@@ -277,7 +277,7 @@ export default function TeamPage() {
                 key={advisor.name}
                 className="flex bg-white p-6 rounded-lg shadow-sm border border-gray-100 items-start gap-5"
               >
-                <div className="relative w-20 h-20 flex-shrink-0 rounded-full overflow-hidden ring-2 ring-[#0F3E6D]/20">
+                <div className="relative w-20 h-20 flex-shrink-0 rounded-full overflow-hidden ring-2 ring-[#7F77DD]/20">
                   <Image
                     src={advisor.image}
                     alt={advisor.name}
@@ -297,14 +297,14 @@ export default function TeamPage() {
                   <div className="mt-3 flex gap-3">
                     <a
                       href="#"
-                      className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                      className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                       aria-label="LinkedIn"
                     >
                       <Linkedin className="size-4" />
                     </a>
                     <a
                       href="#"
-                      className="text-gray-400 hover:text-[#0F3E6D] transition-colors"
+                      className="text-gray-400 hover:text-[#7F77DD] transition-colors"
                       aria-label="Website"
                     >
                       <Globe className="size-4" />
@@ -330,7 +330,7 @@ export default function TeamPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {collaborators.map((person) => (
               <div key={person.name} className="group text-center">
-                <div className="relative w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden ring-2 ring-gray-100 group-hover:ring-[#0F3E6D] transition-all">
+                <div className="relative w-24 h-24 mx-auto mb-3 rounded-full overflow-hidden ring-2 ring-gray-100 group-hover:ring-[#7F77DD] transition-all">
                   <Image
                     src={person.image}
                     alt={person.name}
@@ -350,25 +350,25 @@ export default function TeamPage() {
       </section>
 
       {/* ────────────────────── CTA ────────────────────── */}
-      <section className="bg-[#0F3E6D] py-16">
+      <section className="bg-[#1B1340] py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Join the Future of Applied AI
           </h2>
-          <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
             We are always looking for passionate researchers, engineers, and
             students to join our lab. Check out our open positions.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/join-us"
-              className="bg-white text-[#0F3E6D] font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors shadow-lg inline-flex items-center justify-center gap-2"
+              className="bg-[#7F77DD] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#6860C7] transition-colors shadow-lg inline-flex items-center justify-center gap-2"
             >
               View Openings <ArrowRight className="size-4" />
             </Link>
             <Link
               href="/join-us"
-              className="border border-blue-300/40 text-white font-semibold py-3 px-8 rounded-full hover:bg-white/10 transition-colors inline-flex items-center justify-center"
+              className="border border-white/20 text-white font-semibold py-3 px-8 rounded-full hover:bg-white/10 transition-colors inline-flex items-center justify-center"
             >
               Contact Us
             </Link>

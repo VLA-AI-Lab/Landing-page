@@ -26,24 +26,24 @@ const values = [
     title: 'Scientific Rigor',
     description:
       'We believe in reproducible results and transparent methodology. Every claim we make is backed by data, and every model is stress-tested against the unknown.',
-    iconBg: 'bg-blue-50',
-    iconColor: 'text-[#0F3E6D]',
+    iconBg: 'domain-bg-light',
+    iconColor: 'domain-text',
   },
   {
     icon: Users,
     title: 'Radical Collaboration',
     description:
       'Silos kill innovation. We actively share knowledge across disciplines, merging cognitive science with computer engineering to forge new paths.',
-    iconBg: 'bg-indigo-50',
-    iconColor: 'text-indigo-600',
+    iconBg: 'domain-bg-light',
+    iconColor: 'domain-text',
   },
   {
     icon: ShieldCheck,
     title: 'Ethical Impact',
     description:
       'Technology is not neutral. We prioritize research that uplifts society and minimizes harm, embedding safety protocols at the foundational level.',
-    iconBg: 'bg-teal-50',
-    iconColor: 'text-teal-600',
+    iconBg: 'domain-bg-light',
+    iconColor: 'domain-text',
   },
 ];
 
@@ -112,13 +112,13 @@ export default function AboutPage() {
       {/* ────────────────────── VISION HERO ────────────────────── */}
       <section className="relative py-24 sm:py-32 bg-slate-50 overflow-hidden">
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-[#0F3E6D] font-semibold tracking-wide uppercase text-sm mb-4 block">
+          <span className="domain-text font-semibold tracking-wide uppercase text-sm mb-4 block">
             Our Vision
           </span>
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-8">
             To bridge the gap between theoretical intelligence and practical
             application, creating{' '}
-            <span className="text-[#0F3E6D]">AI&nbsp;that&nbsp;matters.</span>
+            <span className="domain-text">AI&nbsp;that&nbsp;matters.</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We envision a future where artificial intelligence solves
@@ -133,7 +133,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-[#0F3E6D] text-xs font-semibold uppercase tracking-wider">
+              <span className="inline-flex items-center px-3 py-1 rounded-full domain-bg-light domain-text text-xs font-semibold uppercase tracking-wider">
                 Our Mission
               </span>
               <h2 className="font-display text-3xl font-bold text-gray-900">
@@ -157,7 +157,7 @@ export default function AboutPage() {
               <div className="pt-2">
                 <Link
                   href="/research"
-                  className="inline-flex items-center text-[#0F3E6D] font-semibold hover:underline gap-1"
+                  className="inline-flex items-center domain-text font-semibold hover:underline gap-1"
                 >
                   Read our latest Annual Report
                   <ArrowRight className="size-4" />
@@ -215,13 +215,13 @@ export default function AboutPage() {
       </section>
 
       {/* ────────────────────── METHODOLOGY ────────────────────── */}
-      <section className="py-24 bg-[#0F3E6D] text-white">
+      <section className="py-24 domain-bg-dark text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl font-bold mb-4">
               The VLA Methodology
             </h2>
-            <p className="text-blue-100 max-w-2xl mx-auto">
+            <p className="text-gray-400 max-w-2xl mx-auto">
               From hypothesis to deployment, our iterative cycle ensures
               excellence.
             </p>
@@ -229,16 +229,16 @@ export default function AboutPage() {
 
           <div className="relative">
             {/* connecting line – desktop only */}
-            <div className="hidden md:block absolute top-8 left-[12.5%] w-[75%] h-0.5 bg-blue-400/30" />
+            <div className="hidden md:block absolute top-8 left-[12.5%] w-[75%] h-0.5 bg-white/15" />
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {methodology.map((m) => (
                 <div key={m.step} className="relative text-center">
-                  <div className="w-16 h-16 mx-auto bg-white text-[#0F3E6D] rounded-full flex items-center justify-center font-bold text-xl shadow-lg mb-6 relative z-10 border-4 border-blue-400/40">
+                  <div className="w-16 h-16 mx-auto bg-white domain-text rounded-full flex items-center justify-center font-bold text-xl shadow-lg mb-6 relative z-10 border-4 border-white/20">
                     {m.step}
                   </div>
                   <h4 className="text-xl font-bold mb-2">{m.title}</h4>
-                  <p className="text-sm text-blue-100 leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     {m.description}
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function AboutPage() {
                 {/* dot */}
                 <div
                   className={`absolute -left-[9px] top-1 w-4 h-4 rounded-full ring-4 ring-slate-50 ${
-                    m.isCurrent ? 'bg-[#0F3E6D]' : 'bg-gray-300'
+                    m.isCurrent ? 'domain-bg' : 'bg-gray-300'
                   }`}
                 />
 
@@ -272,7 +272,7 @@ export default function AboutPage() {
                 <div className="md:w-32 md:text-right flex-shrink-0 pl-6 md:pl-0">
                   <span
                     className={`text-lg font-bold ${
-                      m.isCurrent ? 'text-[#0F3E6D]' : 'text-gray-500'
+                      m.isCurrent ? 'domain-text' : 'text-gray-500'
                     }`}
                   >
                     {m.year}
@@ -306,13 +306,13 @@ export default function AboutPage() {
           <div className="flex gap-4">
             <Link
               href="/join-us"
-              className="px-6 py-3 text-base font-medium rounded-lg text-[#0F3E6D] bg-blue-50 hover:bg-blue-100 transition-colors"
+              className="px-6 py-3 text-base font-medium rounded-lg domain-text domain-bg-light hover:opacity-80 transition-colors"
             >
               View Open Roles
             </Link>
             <Link
               href="/partners"
-              className="px-6 py-3 text-base font-medium rounded-lg text-white bg-[#0F3E6D] hover:bg-[#0b3059] shadow-md transition-colors"
+              className="px-6 py-3 text-base font-medium rounded-lg text-white domain-bg domain-bg-hover shadow-md transition-colors"
             >
               Partner With Us
             </Link>

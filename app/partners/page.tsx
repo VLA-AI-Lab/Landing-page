@@ -110,7 +110,7 @@ export default function PartnersPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Partners &amp;{' '}
-            <span className="text-[#0F3E6D]">Collaboration</span>
+            <span className="domain-text">Collaboration</span>
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed">
             We bridge the gap between theoretical AI research and real-world
@@ -124,7 +124,7 @@ export default function PartnersPage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-sm font-bold text-[#0F3E6D] tracking-widest uppercase block mb-2">
+            <span className="text-sm font-bold domain-text tracking-widest uppercase block mb-2">
               Our Network
             </span>
             <h2 className="font-display text-3xl font-bold text-gray-900">
@@ -161,7 +161,7 @@ export default function PartnersPage() {
       <section className="py-20 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12">
-            <span className="text-sm font-bold text-[#0F3E6D] tracking-widest uppercase block mb-2">
+            <span className="text-sm font-bold domain-text tracking-widest uppercase block mb-2">
               Impact Stories
             </span>
             <h2 className="font-display text-3xl font-bold text-gray-900">
@@ -194,7 +194,7 @@ export default function PartnersPage() {
 
                   {/* text */}
                   <div className="w-full lg:w-1/2 space-y-5">
-                    <div className="flex items-center gap-2 text-[#0F3E6D] font-medium">
+                    <div className="flex items-center gap-2 domain-text font-medium">
                       <TagIcon className="size-4" />
                       <span className="text-sm uppercase tracking-wide">
                         {study.tag}
@@ -208,7 +208,7 @@ export default function PartnersPage() {
                     </p>
                     <Link
                       href="/research"
-                      className="inline-flex items-center text-[#0F3E6D] font-semibold hover:underline gap-1"
+                      className="inline-flex items-center domain-text font-semibold hover:underline gap-1"
                     >
                       Read Full Case Study
                       <ArrowRight className="size-4" />
@@ -243,10 +243,10 @@ export default function PartnersPage() {
                   key={step.num}
                   className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm relative"
                 >
-                  <span className="absolute top-4 right-4 font-display text-6xl font-bold text-[#0F3E6D]/5">
+                  <span className="absolute top-4 right-4 font-display text-6xl font-bold domain-bg-light">
                     {step.num}
                   </span>
-                  <div className="w-12 h-12 bg-[#0F3E6D]/10 rounded-lg flex items-center justify-center mb-6 text-[#0F3E6D]">
+                  <div className="w-12 h-12 domain-bg-light rounded-lg flex items-center justify-center mb-6 domain-text">
                     <StepIcon className="size-6" />
                   </div>
                   <h3 className="font-bold text-xl text-gray-900 mb-3">
@@ -263,7 +263,7 @@ export default function PartnersPage() {
           <div className="mt-16 text-center">
             <Link
               href="/join-us"
-              className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium rounded-full shadow-sm text-white bg-[#0F3E6D] hover:bg-[#0b3059] transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 text-base font-medium rounded-full shadow-sm text-white domain-bg domain-bg-hover transition-colors"
             >
               Start a Conversation
               <Mail className="size-5" />

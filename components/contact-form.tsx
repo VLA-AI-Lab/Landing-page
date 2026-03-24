@@ -55,7 +55,7 @@ export function ContactForm() {
             name="first-name"
             type="text"
             required
-            className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D] focus:border-[#0F3E6D]"
+            className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7F77DD] focus:border-[#7F77DD]"
           />
         </div>
         <div>
@@ -70,7 +70,7 @@ export function ContactForm() {
             name="last-name"
             type="text"
             required
-            className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D] focus:border-[#0F3E6D]"
+            className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7F77DD] focus:border-[#7F77DD]"
           />
         </div>
       </div>
@@ -87,7 +87,7 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D] focus:border-[#0F3E6D]"
+          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7F77DD] focus:border-[#7F77DD]"
         />
       </div>
 
@@ -101,7 +101,7 @@ export function ContactForm() {
         <select
           id="subject"
           name="subject"
-          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D] focus:border-[#0F3E6D]"
+          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7F77DD] focus:border-[#7F77DD]"
         >
           <option>General Inquiry</option>
           <option>Research Collaboration</option>
@@ -122,7 +122,7 @@ export function ContactForm() {
           name="message"
           rows={4}
           required
-          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D] focus:border-[#0F3E6D]"
+          className="block w-full rounded-md border border-gray-300 bg-gray-50 text-gray-900 shadow-sm py-2.5 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#7F77DD] focus:border-[#7F77DD]"
         />
       </div>
 
@@ -132,7 +132,7 @@ export function ContactForm() {
           name="privacy"
           type="checkbox"
           required
-          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#0F3E6D] focus:ring-[#0F3E6D]"
+          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#7F77DD] focus:ring-[#7F77DD]"
         />
         <div className="ml-3 text-sm">
           <label htmlFor="privacy" className="font-medium text-gray-700">
@@ -146,7 +146,7 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full py-3 px-4 rounded-md shadow-sm text-sm font-bold text-white bg-[#0F3E6D] hover:bg-[#0b3059] transition-colors uppercase tracking-wide"
+        className="w-full py-3 px-4 rounded-md shadow-sm text-sm font-bold text-white bg-[#7F77DD] hover:bg-[#6860C7] transition-colors uppercase tracking-wide"
       >
         Send Message
       </button>

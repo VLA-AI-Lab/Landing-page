@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect, useCallback } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { DomainSwitcher } from '@/components/domain-switcher';
 
 const navLinks = [
   { href: '/research', label: 'Research' },
@@ -85,21 +86,20 @@ export function Header() {
                 className={cn(
                   'px-4 py-2 text-sm font-medium rounded-md transition-colors duration-200',
                   pathname === link.href
-                    ? 'text-[#0F3E6D] bg-[#0F3E6D]/5'
-                    : 'text-gray-600 hover:text-[#0F3E6D] hover:bg-gray-50'
+                    ? 'domain-text domain-bg-light'
+                    : 'text-gray-600 hover:domain-text hover:bg-gray-50'
                 )}
               >
                 {link.label}
               </Link>
             ))}
 
+            <DomainSwitcher />
+
             <Link
               href="/join-us"
               className={cn(
-                'ml-3 inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full transition-all duration-200',
-                pathname === '/join-us'
-                  ? 'bg-[#0F3E6D] text-white shadow-lg shadow-[#0F3E6D]/25'
-                  : 'bg-[#0F3E6D] text-white hover:bg-[#0b3059] shadow-md shadow-[#0F3E6D]/20 hover:shadow-lg hover:shadow-[#0F3E6D]/30'
+                'ml-3 inline-flex items-center px-5 py-2 text-sm font-semibold rounded-full transition-all duration-200 domain-bg domain-bg-hover text-white shadow-md hover:shadow-lg'
               )}
             >
               Join Us
@@ -109,7 +109,7 @@ export function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 rounded-lg text-gray-600 hover:text-[#0F3E6D] hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-colors"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -121,7 +121,7 @@ export function Header() {
       <div
         className={cn(
           'md:hidden overflow-hidden transition-all duration-300 ease-in-out',
-          mobileOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+          mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         )}
       >
         <nav
@@ -137,16 +137,20 @@ export function Header() {
               className={cn(
                 'block px-4 py-2.5 text-sm font-medium rounded-lg transition-colors',
                 pathname === link.href
-                  ? 'text-[#0F3E6D] bg-[#0F3E6D]/5'
-                  : 'text-gray-600 hover:text-[#0F3E6D] hover:bg-gray-50'
+                  ? 'domain-text domain-bg-light'
+                  : 'text-gray-600 hover:bg-gray-50'
               )}
             >
               {link.label}
             </Link>
           ))}
+          <div className="flex items-center justify-between px-4 py-2">
+            <span className="text-xs text-gray-400 uppercase tracking-wider font-medium">Theme</span>
+            <DomainSwitcher />
+          </div>
           <Link
             href="/join-us"
-            className="block mx-4 mt-2 text-center px-5 py-2.5 text-sm font-semibold rounded-full bg-[#0F3E6D] text-white hover:bg-[#0b3059] shadow-md transition-all"
+            className="block mx-4 mt-2 text-center px-5 py-2.5 text-sm font-semibold rounded-full domain-bg domain-bg-hover text-white shadow-md transition-all"
           >
             Join Us
           </Link>

@@ -41,7 +41,7 @@ function LinkedInIcon({ className }: { className?: string }) {
 
 export function Footer() {
   return (
-    <footer className="bg-[#0a1628] text-gray-300">
+    <footer className="bg-[#1B1340] text-gray-300">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
@@ -118,7 +118,7 @@ export function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-9 rounded-full bg-gray-700/50 flex items-center justify-center text-gray-400 hover:bg-[#0F3E6D] hover:text-white transition-all duration-200"
+                className="size-9 rounded-full bg-gray-700/50 flex items-center justify-center text-gray-400 hover:bg-[#7F77DD] hover:text-white transition-all duration-200"
                 aria-label="Twitter"
               >
                 <TwitterIcon className="size-4" />
@@ -127,7 +127,7 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="size-9 rounded-full bg-gray-700/50 flex items-center justify-center text-gray-400 hover:bg-[#0F3E6D] hover:text-white transition-all duration-200"
+                className="size-9 rounded-full bg-gray-700/50 flex items-center justify-center text-gray-400 hover:bg-[#7F77DD] hover:text-white transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <LinkedInIcon className="size-4" />

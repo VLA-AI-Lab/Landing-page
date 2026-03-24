@@ -45,7 +45,7 @@ export default function JoinUsPage() {
   return (
     <>
       {/* ────────────────────── HERO ────────────────────── */}
-      <section className="relative bg-[#0F3E6D] py-20 overflow-hidden">
+      <section className="relative domain-bg-dark py-20 overflow-hidden">
         {/* decorative wave */}
         <div className="absolute inset-0 opacity-10">
           <svg
@@ -60,7 +60,7 @@ export default function JoinUsPage() {
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-tight">
             Connect With Our Lab
           </h1>
-          <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
             Whether you&rsquo;re a prospective student, a fellow researcher, or
             an industry partner, we&rsquo;re eager to collaborate on the future
             of Artificial Intelligence.
@@ -76,7 +76,7 @@ export default function JoinUsPage() {
             {/* Join the Lab */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <GraduationCap className="size-8 text-[#0F3E6D]" />
+                <GraduationCap className="size-8 domain-text" />
                 <h2 className="text-3xl font-display font-bold text-gray-900">
                   Join the Lab
                 </h2>
@@ -98,14 +98,14 @@ export default function JoinUsPage() {
                     >
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#0F3E6D] transition-colors">
+                          <h3 className="text-lg font-bold text-gray-900 domain-text-hover transition-colors">
                             {pos.title}
                           </h3>
                           <p className="text-sm text-gray-500 mt-1">
                             {pos.type}
                           </p>
                         </div>
-                        <ArrowRight className="size-5 text-gray-400 group-hover:text-[#0F3E6D] transition-colors flex-shrink-0 mt-1" />
+                        <ArrowRight className="size-5 text-gray-400 domain-text-hover transition-colors flex-shrink-0 mt-1" />
                       </div>
                       <p className="text-gray-600 mt-3 text-sm">
                         {pos.description}
@@ -132,7 +132,7 @@ export default function JoinUsPage() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="bg-white p-2 rounded-full shadow-lg">
-                      <MapPin className="size-7 text-[#0F3E6D]" />
+                      <MapPin className="size-7 domain-text" />
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ export default function JoinUsPage() {
                     <p>Engineering Building II, Suite 400</p>
                     <p>123 Innovation Drive</p>
                     <p>Tech City, TC 94043</p>
-                    <div className="mt-4 flex items-center gap-2 text-[#0F3E6D] font-medium cursor-pointer hover:underline">
+                    <div className="mt-4 flex items-center gap-2 domain-text font-medium cursor-pointer hover:underline">
                       <MapPin className="size-4" />
                       Get Directions
                     </div>
@@ -175,7 +175,7 @@ export default function JoinUsPage() {
                 </p>
                 <a
                   href="mailto:info@vlaailab.edu"
-                  className="text-lg font-bold text-[#0F3E6D] hover:underline"
+                  className="text-lg font-bold domain-text hover:underline"
                 >
                   info@vlaailab.edu
                 </a>
@@ -185,13 +185,13 @@ export default function JoinUsPage() {
         </div>
 
         {/* ────────────────────── NEWSLETTER ────────────────────── */}
-        <div className="mt-20 py-12 px-6 lg:px-12 bg-slate-900 rounded-2xl relative overflow-hidden">
+        <div className="mt-20 py-12 px-6 lg:px-12 domain-bg-dark rounded-2xl relative overflow-hidden">
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-2">
                 Subscribe to our Research Digest
               </h3>
-              <p className="text-slate-400 text-base md:text-lg">
+              <p className="text-gray-500 text-base md:text-lg">
                 Get the latest papers, seminar announcements, and lab news
                 delivered to your inbox monthly.
               </p>
@@ -208,16 +208,16 @@ export default function JoinUsPage() {
                   autoComplete="email"
                   required
                   placeholder="Enter your email"
-                  className="w-full rounded-md border border-white/20 px-4 py-3 placeholder-slate-500 bg-white/10 text-white backdrop-blur-sm text-sm focus:outline-none focus:ring-2 focus:ring-[#0F3E6D]"
+                  className="w-full rounded-md border border-white/20 px-4 py-3 placeholder-gray-600 bg-white/10 text-white backdrop-blur-sm text-sm focus:outline-none focus:ring-2 domain-ring"
                 />
                 <button
                   type="submit"
-                  className="flex-none rounded-md bg-[#0F3E6D] py-3 px-5 text-sm font-bold text-white shadow-sm hover:bg-[#0b3059] transition-colors"
+                  className="flex-none rounded-md domain-bg py-3 px-5 text-sm font-bold text-white shadow-sm domain-bg-hover transition-colors"
                 >
                   Subscribe
                 </button>
               </form>
-              <p className="mt-3 text-xs text-slate-500">
+              <p className="mt-3 text-xs text-gray-600">
                 We care about the protection of your data. Read our{' '}
                 <Link href="#" className="font-medium text-white hover:underline">
                   Privacy Policy
