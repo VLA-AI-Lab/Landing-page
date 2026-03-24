@@ -6,7 +6,13 @@ import { ArrowRight, Linkedin, GraduationCap, Globe } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Our Team',
   description:
-    'Meet the minds behind VLA AI Lab – researchers, engineers, and academics advancing AI responsibly.',
+    'Meet the researchers, engineers, and academics at VLA AI Lab — the team advancing responsible AI for Ethiopia and Africa.',
+  openGraph: {
+    title: 'Our Team | VLA AI Lab',
+    description:
+      'Meet the researchers, engineers, and academics at VLA AI Lab — the team advancing responsible AI for Ethiopia and Africa.',
+  },
+  alternates: { canonical: '/team' },
 };
 
 /* ── images ── */

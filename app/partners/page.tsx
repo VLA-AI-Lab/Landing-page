@@ -14,7 +14,13 @@ import {
 export const metadata: Metadata = {
   title: 'Partners & Collaboration',
   description:
-    'Strategic alliances with industry leaders, academic institutions, and government bodies powering real-world AI impact.',
+    'VLA AI Lab partners — strategic alliances with universities, industry leaders, and government bodies powering real-world AI impact in Ethiopia and Africa.',
+  openGraph: {
+    title: 'Partners & Collaboration | VLA AI Lab',
+    description:
+      'VLA AI Lab partners — strategic alliances with universities, industry leaders, and government bodies powering real-world AI impact in Ethiopia and Africa.',
+  },
+  alternates: { canonical: '/partners' },
 };
 
 /* ── partner logos / placeholders ── */

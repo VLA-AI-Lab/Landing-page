@@ -7,7 +7,13 @@ import { ContactForm } from '@/components/contact-form';
 export const metadata: Metadata = {
   title: 'Join Us',
   description:
-    'Connect with VLA AI Lab — explore open positions, send us a message, or subscribe to our research digest.',
+    'Join VLA AI Lab — explore open research positions, internships, and collaboration opportunities in AI research in Addis Ababa, Ethiopia.',
+  openGraph: {
+    title: 'Join Us | VLA AI Lab',
+    description:
+      'Join VLA AI Lab — explore open research positions, internships, and collaboration opportunities in AI research in Addis Ababa, Ethiopia.',
+  },
+  alternates: { canonical: '/join-us' },
 };
 
 /* ── images ── */

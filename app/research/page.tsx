@@ -19,7 +19,13 @@ import { EmptyState } from '@/components/empty-state';
 export const metadata: Metadata = {
   title: 'Research',
   description:
-    'Explore our research domains, featured projects, and publications advancing AI for real-world impact in Ethiopia & Africa.',
+    'Explore VLA AI Lab research — NLP for African languages, computer vision, agricultural AI, climate resilience, and governance AI projects and publications.',
+  openGraph: {
+    title: 'Research | VLA AI Lab',
+    description:
+      'Explore VLA AI Lab research — NLP for African languages, computer vision, agricultural AI, climate resilience, and governance AI projects and publications.',
+  },
+  alternates: { canonical: '/research' },
 };
 
 /* ── image URLs ── */

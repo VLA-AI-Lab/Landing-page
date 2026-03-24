@@ -11,7 +11,13 @@ import {
 export const metadata: Metadata = {
   title: 'About & Mission',
   description:
-    'Our vision, mission, core values, and methodology at VLA AI Lab.',
+    'Learn about VLA AI Lab — our vision, mission, core values, and research methodology driving AI innovation in Ethiopia and across Africa.',
+  openGraph: {
+    title: 'About & Mission | VLA AI Lab',
+    description:
+      'Learn about VLA AI Lab — our vision, mission, core values, and research methodology driving AI innovation in Ethiopia and across Africa.',
+  },
+  alternates: { canonical: '/about' },
 };
 
 /* ── images from prototype ── */
